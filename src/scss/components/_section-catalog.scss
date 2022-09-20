@@ -1,0 +1,87 @@
+.section-catalog {
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 660px);
+    grid-template-areas:
+        "XXXX XXXX XXXX XXXX"
+        "XXXX XXXX XXXX XXXX"
+        "XXXX XXXX XXXX XXXX"
+        "XXXX XXXX XXXX XXXX"
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    padding-top: 76px;
+    border-bottom: 1px solid var(--color-light_gray);
+    border-right: 1px solid var(--color-light_gray);
+
+    &_wrapper {
+      margin: 0 auto;
+    }
+
+  }
+
+  &__img {
+    margin: 0 auto;
+    margin-bottom: 76px;
+
+    &_small {
+      width: 220px;
+      height: 240px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-RFD);
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--color-black);
+    margin-bottom: 54px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-light_gray);
+      bottom: -24px;
+      left: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-black);
+
+    &_more {
+      font-size: 18px;
+    line-height: 150%;
+    color: var(--color-gray);
+    }
+  }
+}
