@@ -1,0 +1,22 @@
+.header-contacts {
+  &__link {
+    line-height: 150%;
+    color: var(--color-gray);
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: left center;
+    padding-left: 30px;
+
+    @include desktop-up {
+      font-size: 14px;
+      background-size: 20px 20px;
+    }
+
+    @include desktop {
+      font-size: 12px;
+      background-size: 15px 15px;
+      padding-left: 24px;
+    }
+  }
+}

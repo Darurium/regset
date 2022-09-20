@@ -1,0 +1,36 @@
+.footer {
+
+  &__wrapper {
+    padding: 70px 0;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    line-height: 145%;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 145%;
+    color: #fff;
+  }
+}

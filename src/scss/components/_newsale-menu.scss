@@ -1,0 +1,19 @@
+.newsale-menu {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    line-height: 150%;
+    color: var(--color-black);
+  }
+}

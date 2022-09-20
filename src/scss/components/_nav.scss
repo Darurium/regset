@@ -1,0 +1,35 @@
+.nav {
+  margin: 0 auto;
+
+  &__list {
+    max-width: 1009px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    @include tablet-up {
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__link {
+    line-height: 150%;
+    color: var(--color-gray);
+
+    @include desktop-up {
+      font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 12px;
+    }
+  }
+}

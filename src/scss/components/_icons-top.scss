@@ -1,0 +1,22 @@
+.icons-top {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+
+  &__link {
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--color-black);
+    }
+  }
+}

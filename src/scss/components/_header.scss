@@ -1,0 +1,39 @@
+.header {
+
+  @include tablet {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-light_gray);
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+}
+
+.city {
+  display: block;
+  line-height: 150%;
+  color: var(--color-gray);
+  background-image: url("../img/point.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 45px;
+
+  @include desktop-up {
+    font-size: 14px;
+    background-size: 20px 20px;
+  }
+
+  @include desktop {
+    font-size: 12px;
+    background-size: 15px 15px;
+    padding-left: 24px;
+  }
+}

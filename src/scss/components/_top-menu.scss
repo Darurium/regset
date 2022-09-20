@@ -1,0 +1,23 @@
+.top-menu {
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 74px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

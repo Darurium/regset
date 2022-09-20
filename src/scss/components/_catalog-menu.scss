@@ -1,0 +1,22 @@
+.catalog-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+
+  &__burger {
+    display: none;
+  }
+
+  &__link {
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-black);
+    background-image: url("../img/burger.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 24px;
+    background-position: left center;
+    padding-left: 36px;
+  }
+
+
+}

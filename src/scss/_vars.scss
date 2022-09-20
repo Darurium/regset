@@ -1,0 +1,19 @@
+// если вы хотите использовать sass-переменные - удалите root
+
+:root {
+  // base
+
+  --font-family: "MontserratRegular";
+  --content-width: 1755px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // --container-width: var(--content-width);
+
+  // font
+  --font-RFD: 'RFDewiExpanded';
+
+  // colors
+  --color-gray: #7a7a7a;
+  --color-light_gray: #c1c1c1;
+  --color-black: #444;
+}
