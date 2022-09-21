@@ -3,12 +3,36 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 660px);
+    grid-template-rows: repeat(3, 660px);
     grid-template-areas:
-        "XXXX XXXX XXXX XXXX"
-        "XXXX XXXX XXXX XXXX"
-        "XXXX XXXX XXXX XXXX"
-        "XXXX XXXX XXXX XXXX"
+        "small-1 big-1 big-1 small-2"
+        "big-2 big-2 small-3 small-4"
+        "small-5 small-6 big-3 big-3"
+  }
+
+  &__catalog-1 {
+    grid-area: small-1;
+  }
+  &__catalog-2 {
+    grid-area: big-1;
+  }
+  &__catalog-3 {
+    grid-area: small-2;
+  }
+  &__catalog-4 {
+    grid-area: big-2;
+  }
+  &__catalog-5 {
+    grid-area: small-3;
+  }
+  &__catalog-6 {
+    grid-area: small-4;
+  }
+  &__catalog-7 {
+    grid-area: small-5;
+  }
+  &__catalog-8 {
+    grid-area: small-6;
   }
 
   &__items {
