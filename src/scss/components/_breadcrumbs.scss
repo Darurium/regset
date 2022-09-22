@@ -1,0 +1,38 @@
+.breadcrumbs {
+
+  // padding: 18px 0;
+
+  &__wrapper {
+    padding: 18px 60px;
+
+  border: 1px solid var(--color-light_gray);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 68px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 24px;
+        right: -40px;
+        top: 0;
+        background-image: url("../img/breadcrumbs-arrow.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__link {
+    line-height: 150%;
+    color: var(--color-gray);
+  }
+}
